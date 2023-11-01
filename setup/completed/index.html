@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FFPP - Signed Out</title>
+    <link href="/css/ffpp.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="/css/bootstrap-icons-1.9.1.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <div id="main" class="d-flex flex-column min-vh-100 justify-content-center align-items-center min-vw-100">
+      <main>
+        <div id="injectableMain">
+          <div class="card text-bg-dark modal-bg-dark" style="max-width: 1000px">
+            <div class="d-flex card-body">
+              <div class="col ms-0 mt-0 mb-0 "style="max-width: 200px; max-height: 200px; background-color: black;">
+                <img class="p-4" heigh="200px" width="200px" src="/img/ffpp.png" alt="FFPP Logo">
+              </div>
+              <div class="col ms-3">
+                <div class="row mb-2">
+                  <div class="col">
+                    <h5 class="card-title mt-2">Signed Out</h5>
+                  </div>
+
+                </div>
+                <div class="row mb-2">
+                  <p class="card-text mt-3 me-1">You have successfully signed out of FFPP.</p>
+                </div>
+                <div class="row justify-content-end ps-3 pe-2 pt-3">
+                  <button class="btn btn-secondary general-button shadow-none" style="max-width:90px;margin-right:3px" onclick="Redirect()">Sign In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript"> function Redirect(){window.location.replace("/");}</script>
+    <script type="text/javascript" src="/js/bootstrap-5.2.0.bundle.min.js" integrity="sha384-DLUO5IuVYJRWQsIyaqxfLbQiZr8+JNMVqcyEJbpMIV9jVCyIVgXLBz6YL3Zcveds" crossorigin></script>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+@import "./bootstrap.scss";
+
+$ffpp-bg-deep-dark: $black;
+$ffpp-bg-dark: #303030;
+$ffpp-bg-hover-dark: #525252;
+$ffpp-highlight-dark: #ffc107;
+$ffpp-highlight-alt-dark: #b371ff;
+$ffpp-bg-sidebar-dark: #212121;
+$ffpp-sidebar-label-dark: #999999;
+$ffpp-bg-modal-dark: #141414;
+$ffpp-color-dark: #ffffff;
+$ffpp-cadbury: #7d0dfd;
+$ffpp-button-dark: #323232;
+$ffpp-disabled: #888888;
+
+nav {
+    background-color: $ffpp-bg-deep-dark;
+    max-height: 60px;
+}
+
+body {
+    background-color: $ffpp-bg-dark;
+    color: $ffpp-color-dark;
+}
+
+.wh32x34 {
+    height: 32px !important;
+    width: 34px !important;
+}
+
+.highlight-alt-dark-fg {
+    color: $ffpp-highlight-alt-dark
+}
+
+.highlight-alt-dark-bg {
+    background: $ffpp-highlight-alt-dark
+}
+
+.highlight-dark-fg {
+    color: $ffpp-highlight-dark
+}
+
+.highlight-dark-bg {
+    background: $ffpp-highlight-dark
+}
+
+.white-fg {
+    color: #fff;
+}
+
+.white-bg {
+    background: #fff;
+}
+
+.general-button-color-fg {
+    color: $ffpp-button-dark;
+}
+
+.general-button-color-bg {
+    background: $ffpp-button-dark;
+}
+
+.general-button-color-border {
+    border: solid 1px $ffpp-button-dark;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $ffpp-bg-sidebar-dark;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+#sidebar-nav {
+    width: 250px;
+}
+
+.sidebar-button {
+    background-color: $ffpp-bg-sidebar-dark;
+
+    &:active,&:focus {
+        background-color: $ffpp-highlight-dark !important;
+        color: $ffpp-bg-deep-dark !important;
+        outline: none;
+        i {
+            color: $ffpp-bg-deep-dark !important;
+        }
+    }
+    &:hover{
+        background-color: $ffpp-bg-hover-dark;
+        border-color: $ffpp-bg-deep-dark;
+    }
+    &:not(:hover) {
+        background-color: $ffpp-bg-sidebar-dark;
+        border-color: $ffpp-bg-deep-dark;
+    }
+}
+
+.sidebar-label {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 12px;
+    color: $ffpp-sidebar-label-dark;
+}
+
+.sidebar-accordian-item {
+    color: $ffpp-color-dark !important;
+    background-color: $ffpp-bg-sidebar-dark !important;
+    border: none;
+}
+
+.sidebar-accordian-button {
+    color: $ffpp-color-dark !important;
+    background-color: $ffpp-bg-sidebar-dark !important;
+    border: none !important;
+    border-radius: 0% !important;
+    padding: 10px 20px !important;
+
+    &.accordion-button.collapsed::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+    
+    &.accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fb0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        transform: rotate(-180deg)
+    }
+
+    &:hover{
+        background-color: $ffpp-bg-hover-dark !important;
+        border-color: $ffpp-bg-deep-dark;
+    }
+}
+
+.sidebar-accordion-body {
+    &.accordion-body {
+        padding: 6px 0px !important;
+    }
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.max-width-365 {
+    max-width: 360px;
+}
+
+.panel-section-dark {
+    border: 1px solid $ffpp-bg-dark;
+}
+
+.toggle-button-active {
+    background-color: $ffpp-highlight-dark !important;
+    color: $ffpp-bg-deep-dark !important;
+    outline: none;
+}
+
+.general-button {
+    background-color: $ffpp-button-dark;
+    border-color: $ffpp-bg-deep-dark;
+    &:active,&:focus {
+        background-color: $ffpp-highlight-dark !important;
+        color: $ffpp-bg-deep-dark !important;
+        outline: none;
+    }
+    &:hover{
+        background-color: $ffpp-bg-hover-dark;
+        border-color: $ffpp-bg-deep-dark;
+    }
+    &:not(:hover) {
+        background-color: $ffpp-button-dark;
+        border-color: $ffpp-bg-deep-dark;
+    }
+}
+
+.signout-button {
+    border-color: $ffpp-bg-deep-dark !important;
+    &:active,&:focus {
+        border-color: $ffpp-bg-deep-dark !important;
+        outline: none;
+    }
+    &:hover{
+        border-color: $ffpp-bg-deep-dark;
+    }
+    &:not(:hover) {
+        border-color: $ffpp-bg-deep-dark;
+    }
+}
+
+.droplist-back-dark
+{
+    @extend .modal-bg-dark;
+}
+.user-profile-button {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: $ffpp-bg-deep-dark;
+    border: none;
+    text-align: center;
+    &:hover,&:not(:hover) {
+        background-color: $ffpp-bg-deep-dark;
+        border: none;
+    }
+}
+
+.user-profile-panel {
+    min-width: 250px;
+    max-width: 375px;
+}
+
+.icon-highlight-dark {
+    color: $ffpp-highlight-dark;
+}
+
+.no-border-radius {
+    border-radius: 0rem;
+}
+
+.defy-justify-right {
+    margin-left: auto;
+}
+
+.onclick-highlight {
+    &:active {
+        background-color: $ffpp-highlight-dark !important;
+        color: $ffpp-bg-deep-dark;
+        outline: none;
+    }
+}
+
+.window-max75-scroll {
+    max-height: 75vh;
+    overflow-y: scroll !important;
+  }
+
+.modal-bg-dark {
+    background-color: $ffpp-bg-modal-dark !important;
+}
+
+.color-dark {
+    color: $ffpp-color-dark;
+}
+
+.bg-border-dark {
+    border-color: $ffpp-bg-deep-dark !important;
+    background-color: $ffpp-bg-deep-dark !important;
+}
+
+.btn-switcher {
+    @extend .bg-border-dark;
+    color: $ffpp-color-dark;
+    &:hover,&:not(:hover) {
+        @extend .bg-border-dark;
+    }
+    &:disabled
+    {
+        color: $ffpp-disabled;
+    }
+}
+
+.alt-text-dark {
+    color: $ffpp-highlight-alt-dark;
+}
+
+.a-general-dark {
+    text-decoration: underline;
+    color: $ffpp-highlight-dark !important;
+    &:hover {
+        color: $ffpp-highlight-alt-dark !important;
+    }
+}
+
+.nav-mascott {
+    width: 30px;
+    height: 30px;
+}
+
+#header {
+    height: 120px;
+}
+
+.card-header {
+    border-bottom: 1px solid $ffpp-bg-dark;
+}
+
+.dt-container{
+    position:relative;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-y: hidden;
+
+    .dt-message {
+        text-align: center;
+    }
+
+    .dt-loading{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        margin-left: -50%;
+        margin-top: -20px;
+        height: 40px;
+        text-align: center;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,0.9) 25%,rgba(255,255,255,0.9) 75%,rgba(255,255,255,0) 100%);
+    }
+}
+.dt-alt-heading {
+    @extend .highlight-alt-dark-fg;
+    font-size: smaller;
+}
+.dt-top {
+ border-top: none !important;
+ display: block !important;
+ padding: 8px 0px !important;
+ padding-left: 8px !important;
+ margin-bottom: 8px !important;
+ margin-top: 0px !important;
+ @extend .dt-bottom;
+}
+.dt-bottom {
+    padding: 8px 10px;
+    display:flex;
+    justify-content:space-between;
+    border-top: 1px solid $ffpp-bg-dark;
+    margin-top: 4px;
+
+    .dt-selector {
+        padding: 6px;
+        height: 32px;
+    }
+    .dt-info {
+        margin: 7px 0;
+    }
+
+}
+
+.dt-input {
+    padding: 6px 12px;
+    min-width: 10px !important;
+    height: 32px;
+}
+
+
+/* PAGER */
+.dt-pagination {
+
+    ul {
+        margin: 0;
+        padding-left: 0;
+        li {
+            list-style: none;
+            float: left;
+        }
+    }
+    a, span{
+        border: 1px solid transparent;
+        float: left;
+        margin-left: 2px;
+        padding: 6px 12px;
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        background-color: $ffpp-button-dark;
+    }
+    .active a{
+        &, &:focus, &:hover{
+            background-color: $ffpp-button-dark;
+            cursor: default;
+            font-weight: bold;
+        }
+    }
+
+    .dt-ellipsis span{
+        cursor: not-allowed;
+    } 
+    .disabled a{
+        &, &:focus, &:hover{
+            cursor: not-allowed;
+            opacity: 0.4;
+        }
+    }
+
+    .pager a {
+        font-weight: bold;
+    }
+}
+
+
+.dt-table {
+    max-width: 100%;
+    width: 100%;
+    border-spacing: 0;
+
+    & > tbody, > tfoot, > thead{
+        & > tr{
+            & > td, & > th{
+                vertical-align: top;
+                padding: 8px 10px;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    & > thead > tr{ 
+        & > th, & > td{
+            vertical-align: bottom;
+            text-align: left;
+            border-bottom: 1px solid $ffpp-bg-dark;
+        }
+    }
+
+    & > tfoot  > tr{ 
+        & > th, & > td{
+            vertical-align: bottom;
+            text-align: left;
+            border-top: 1px solid $ffpp-bg-dark;
+        }
+    }
+
+    th {
+        vertical-align: bottom;
+        text-align: left;
+
+        &.dt-sorter {
+            position: relative;
+            cursor: pointer;
+            padding-right:20px;
+
+            &::before,
+            &::after {
+                content: "";
+                height: 0;
+                width: 0;
+                position: absolute;
+                right: 7px;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                opacity: 0.2;
+                margin: 2px;
+            }
+
+            &::before {
+                border-top: 4px solid #fff;
+                top: 18px;
+            }
+
+            &::after {
+                border-bottom: 4px solid #fff;
+                border-top: 4px solid transparent;
+                bottom: 22px;
+            }
+
+            &.asc::after,
+            &.desc::before {
+                opacity: 1;
+            }
+
+        }
+    }
+
+}
+
+.hidden{
+    display:none!important;
+    opacity:0!important;
+}
