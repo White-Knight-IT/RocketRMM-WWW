@@ -24,6 +24,7 @@ async function SignIn() {
   let account ="";
 
   const myMsal = new msal.PublicClientApplication(config);
+  await myMsal.initialize();
 
   async function handleResponse(response) {
     let accessToken ="";
@@ -77,6 +78,7 @@ async function SignIn() {
 async function SignOut()
 { 
   const myMsal = new msal.PublicClientApplication(config);
+  await myMsal.initialize();
   
   const logoutRequest = {
     account: myMsal.getAccountByHomeId(homeAccountIdGlobal),

@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FFPP - Freakin' Fast Partner Portal</title>
-    <link href="/css/bootstrap-icons-1.9.1.css" rel="stylesheet" integrity="sha384-ESNUyFrMrvuws5P2b+K3oJYVXY8prUqwvpfNpRdM2V4Q4E1hbzw7rOSWeq/m8q6u" crossorigin="anonymous">
-    <link href="/css/ffpp.css" rel="stylesheet" crossorigin="anonymous">
+    <title>RocketRMM</title>
+    <link href="/css/bootstrap-icons-1.9.1.css" rel="stylesheet" crossorigin="anonymous"> <!-- integrity="sha384-ESNUyFrMrvuws5P2b+K3oJYVXY8prUqwvpfNpRdM2V4Q4E1hbzw7rOSWeq/m8q6u" -->
+    <link href="/css/rocketrmm.css" rel="stylesheet" crossorigin="anonymous">
     <nav class="navbar sticky-top">
       <div class="container-fluid d-flex justify-content-start">
         <span class="navbar-brand" href="#">
-          <img src="/img/ffpp.png" alt="" class="d-inline-block align-text-top nav-mascott">
+          <img src="/img/rocketrmm.png" alt="RocketRMM Logo" class="d-inline-block align-text-top nav-mascott">
         </span>
         <button class="border rounded-3 p-1 text-decoration-none bg-border-dark color-dark border-0" onclick="SidebarCollapse()"><i class="bi bi-list bi-lg py-2 p-1"></i></button>
         <div id="tenantsDropdown" class="dropdown">
@@ -23,9 +23,9 @@
           </ul>
         </div>
         <div id="profileDropdown" class="dropdown mt-1 mb-0 defy-justify-right" data-tablesize="">
-          <button id="profileDropdownButton" class=" shadow-none user-profile-button" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="ProfileDropdownButtonClick()">
+          <button id="profileDropdownButton" class=" shadow-none user-profile-button" data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="">
           </button>
-          <ul id="profileList" class="user-profile-panel window-max75-scroll dropdown-menu dropdown-menu-dark dropdown-menu-end droplist-back-dark modal-bg-dark" onclick="ProfileDropdownButtonClick()">
+          <ul id="profileList" class="user-profile-panel window-max75-scroll dropdown-menu dropdown-menu-dark dropdown-menu-end droplist-back-dark modal-bg-dark" onclick="">
             <div class="ms-1 me-1 panel-section-dark">
               <label id="profileName" class="ms-3 me-3 mb-2 mt-2"></label>
               <label id="profileEmail" class="ms-3 me-3 mb-2"></label>
@@ -139,9 +139,9 @@
 
     </script>
       <script type="text/javascript" src="/config.js"></script>
-      <script type="text/javascript" src="/js/msal-2.28.1.js" integrity="sha384-Zzg9dRpqVPwY3zdokPy29ZFaMIAvjiaP2YPsoDT9MI4Y+z4OajJk+q839V1oPRiY" crossorigin></script>
+      <script type="text/javascript" src="/js/msal-browser.min.js" crossorigin></script> <!-- integrity="sha384-Zzg9dRpqVPwY3zdokPy29ZFaMIAvjiaP2YPsoDT9MI4Y+z4OajJk+q839V1oPRiY" -->
       <script type="text/javascript" src="/js/auth.js" crossorigin></script>
-      <script type="text/javascript" src="/js/bootstrap-5.2.0.bundle.min.js" integrity="sha384-DLUO5IuVYJRWQsIyaqxfLbQiZr8+JNMVqcyEJbpMIV9jVCyIVgXLBz6YL3Zcveds" crossorigin></script>
+      <script type="text/javascript" src="/js/bootstrap-5.2.0.bundle.min.js" crossorigin></script> <!-- integrity="sha384-DLUO5IuVYJRWQsIyaqxfLbQiZr8+JNMVqcyEJbpMIV9jVCyIVgXLBz6YL3Zcveds" -->
       <script type="text/javascript" src="/js/datatables.js" crossorigin></script>
       <script type="text/javascript" src="/js/api.js" crossorigin></script>
       <script type="text/javascript" src="/js/app.js" crossorigin></script>

@@ -81,23 +81,13 @@ async function CallApi(url,method,signIn)
   }
 }
 
-async function EditProfile(userId,tenantName,tenantDomain, tenantId, tableSize, defaultUsage)
+async function EditProfile(userId)
 {
   const requestOptions = {
     method: 'PUT',
-    body: JSON.stringify({ userId: userId, lastTenantName: tenantName, lastTenantDomainName: tenantDomain, lastTenantCustomerId: tenantId, defaultPageSize: tableSize, defaultUsageLocation: defaultUsage})
+    body: JSON.stringify({ userId: userId})
   };
   return await CallApi(`/api/EditUserProfile`, requestOptions)
-}
-
-async function ExchangeTokenUrlCode()
-{
-  return await CallApi(`/bootstrap/GetExchangeTokenUrlCode`, { method: 'GET' }, false);
-}
-
-async function GetTenants(allTenantSelector = false)
-{
-  return await CallApi(`/api/ListTenants?AllTenantSelector=${allTenantSelector}`, { method: 'GET' });
 }
 
 async function GraphTokenUrl()
