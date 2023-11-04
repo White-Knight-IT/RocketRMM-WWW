@@ -1,0 +1,1 @@
+RocketRMM certificate revocation list is placed here

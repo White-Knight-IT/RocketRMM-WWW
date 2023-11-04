@@ -1,0 +1,1 @@
+RocketRMM CA certificate is placed here
