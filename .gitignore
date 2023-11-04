@@ -366,6 +366,12 @@ unique.entropy.bytes
 tenants.cache.json
 
 # Potential secrets
+*.secret
+*.secrets
+*/*.secret
+*/*.secrets
+*/*.token
+*.token
 */plain.secrets.json
 plain.secrets.json #pre-ingestion to encrypted state
 */encrypted.secrets.json
@@ -381,6 +387,10 @@ api.zeroconf.aes
 */api.zeroconf.aes
 device.id.token
 */device.id.token
+*.cer
+*.pfx
+*/*.cer
+*/*.pfx
 
 # macOS
 .DS_Store
