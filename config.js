@@ -3,22 +3,22 @@ by the client. */
 
 const config = {
   auth: {
-    clientId: '3d4395e4-51d7-4cd6-8e23-a1117b1f3489',
+    clientId: '0802db63-dc88-466a-82e4-5a1639537afe',
     authority: 'https://login.microsoftonline.com/organizations/',
-    redirectUri: 'https://localhost',
-    postLogoutRedirectUri: 'https://localhost/signedout'
+    redirectUri: 'https://rocketrmm1.wkit.com.au',
+    postLogoutRedirectUri: 'https://rocketrmm1.wkit.com.au/signedout'
   },
   cache: {
     cacheLocation: 'sessionStorage',
     storeAuthStateInCookie: false
   },
   api: {
-    scopes: ['https://whiteknightit.com.au/6614781e-0208-4c7d-92d4-1e3686cdc73d/rocketrmm-api.access'],
+    scopes: ['https://whiteknightit.com.au/ab4a2130-1d47-4612-99fc-81ff07189b0c/rocketrmm-api.access'],
     swagger: true,
-    deviceTag: '24ea38'
+    deviceTag: '48d4d0'
   },
   ui: {
-    frontEndUrl: 'https://localhost',
+    frontEndUrl: 'https://rocketrmm1.wkit.com.au',
     swaggerUi: true
   }
 };
